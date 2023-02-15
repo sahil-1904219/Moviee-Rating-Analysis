@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../attched css files/Movie-details.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="part1">
+        <button class="open-button1" onclick="openForm1()">Add Movie</button>
+
+        <!-- The form -->
+        <div class="form-popup1" id="myForm1">
+          <form action="/action_page.php" class="form-container1">
+            <h2>Add New Movie</h2>
+
+            <label for="email"><b>Movie Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Movie Name"
+              name="email"
+              required
+            />
+            <label for="psw" class="drop-down1"><b>Choose a Genre:</b></label>
+            <select name="cars" class="cars1">
+              <option value="volvo">Horror</option>
+              <option value="saab">Comedy</option>
+              <option value="opel">Action</option>
+              <option value="audi">Romance</option>
+            </select>
+            <div class="image" style="margin-top: 10px">
+              <input
+                type="file"
+                id="img"
+                style="display: none; padding-top: 10px"
+              />
+              <label
+                for="img"
+                style="border: 2px solid black; margin-top: 10px ;"
+                >Click me to Upload Poster</label
+              >
+            </div>
+            <button type="submit" class="btn1">Add Movie</button>
+          </form>
+        </div>
+      </div>
+      <div class="part2">
+        <!-- <a href="add-movie.html"><button class="Add Movie">Add Movie</button></a> -->
+
+        <button class="open-button2" onclick="openForm2()">Update Movie</button>
+
+        <!-- The form -->
+        <div class="form-popup2" id="myForm2">
+          <form action="/action_page.php" class="form-container2">
+            <h1>Update Movie</h1>
+
+            <label for="email"><b>Movie Id</b></label>
+            <input
+              type="number"
+              placeholder="Enter Movie Id"
+              name="email"
+              required
+            />
+
+            <label for="psw"><b>Movie Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+            <label for="psw"><b>Search Movie</b></label>
+            <input type="text" placeholder="Search Movie" name="psw" required />
+
+            <button type="submit" class="btn2">Search Movie</button>
+            <button type="button" class="btn2 cancel2" onclick="closeForm2()">
+              Update Movie
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="part3">
+        <button class="open-button3" onclick="openForm3()">Delete Movie</button>
+        <div class="form-popup2" id="myForm3">
+            <form action="/action_page.php" class="form-container2">
+              <h1>Delete Movie</h1>
+  
+              <label for="email"><b>Movie Id</b></label>
+              <input
+                type="number"
+                placeholder="Enter Movie Id"
+                name="email"
+                required
+              />
+  
+              <label for="psw"><b>Movie Name</b></label>
+              <input
+                type="text"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+              <label for="psw"><b>Search Movie</b></label>
+              <input type="text" placeholder="Search Movie" name="psw" required />
+  
+              <button type="submit" class="btn2">Search Movie</button>
+              <button type="button" class="btn2 cancel2" onclick="closeForm3()">
+                Delete Movie
+              </button>
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img
+          src="../attached images/img_avatar.png"
+          alt="Avatar"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h4><b>Conjuring</b></h4>
+          <p>Horror & Horror</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="../attached images/img_avatar.png"
+          alt="Avatar"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h4><b>Insidious</b></h4>
+          <p>Horror & Horror</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="../attached images/img_avatar.png"
+          alt="Avatar"
+          style="width: 100%"
+        />
+        <div class="container">
+          <h4><b>Anabelle </b></h4>
+          <p>Horror & Horror</p>
+        </div>
+      </div>
+    </div>
+    <script src="../attched css files/script.js"></script>
+  </body>
+</html>

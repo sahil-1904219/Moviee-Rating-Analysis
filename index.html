@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card card-1">
+        <a href="attached html files/Movie-details.html">
+          <button class="button-1">Movie details</button>
+        </a>
+      </div>
+      <div class="card card-2">
+        <!-- <a href="attached html files/add-user.html"> -->
+        <!-- <button class="button-2">Add User</button> -->
+
+        <button class="open-button2" onclick="openForm2()">Add User</button>
+
+        <!-- The form -->
+        <div class="form-popup2" id="myForm2">
+          <form action="/action_page.php" class="form-container2">
+            <h1 style="color: black;">Add user</h1>
+
+            <label for="email"style="color: black;"><b>User Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter User Name"
+              name="email"
+              required
+            />
+
+            <label for="psw"style="color: black;" ><b>Age</b></label>
+            <input
+              type="number"
+              placeholder="Enter Age"
+              name="psw"
+              required
+            />
+
+            <button type="submit" class="btn2">Add User</button>
+            <button type="button" class="btn2 cancel2" onclick="closeForm2()">
+              Close Window
+            </button>
+          </form>
+        </div>
+        <!-- </a> -->
+      </div>
+      <div class="card card-3">
+        <a href="attached html files/Provide-rating.html">
+          <button class="button-3">Provide Rating</button>
+        </a>
+      </div>
+      <div class="card card-4">
+        <a href="attached html files/reports.html">
+          <button class="button-4">Reports</button>
+        </a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

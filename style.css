@@ -1,0 +1,144 @@
+
+body{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.18), rgb(44, 122, 136));
+}
+.card-container{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20%;
+}
+
+
+.card{
+    width: 21%;
+    padding:10px 15px;
+    box-shadow: 0px 9px 31px rgba(0, 0, 0, 0.4);
+    border-radius: 11px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+.button-1 {
+    background-color: #929DFF; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button-3 {
+    background-color: #D288FF; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.button-4 {
+    background: #000000; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button{
+    cursor: pointer;
+  }
+.card-1{
+    justify-content: center;
+    background: #929DFF;
+}
+.card-2{
+    background: #734CF2;
+}
+.card-3{
+    background: #D288FF;
+ } 
+.card-4{
+    background: #000000;
+}  
+
+
+.open-button2 {
+  background-color:  #734CF2;
+  color: white;
+  padding: 15px 32px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* The popup form - hidden by default */
+.form-popup2 {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  /* text-decoration: black; */
+}
+
+/* Add styles to the form container */
+.form-container2 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  text-decoration: #000000;
+  
+}
+
+/* Full-width input fields */
+.form-container2 input[type=text], .form-container2 input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container2 input[type=text]:focus, .form-container2 input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container2 .btn2 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container2 .cancel2 {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container2 .btn2:hover, .open-button2:hover {
+  opacity: 1;
+}
